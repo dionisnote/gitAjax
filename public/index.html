@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .dtext {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: inline-block;
+            max-width: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Git repositories and gists.</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="panel panel-info">
+
+                    <div class="panel-heading">Search repositories</div>
+                    <div class="panel-body">
+                        <input type="text" id="repo-search" class="form-control">
+                        <div id="result" class="well"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="panel panel-info">
+                    <div class="panel-heading">Create Gist</div>
+                    <div>
+                        <input type="text" id="gist-description" class="form-control" placeholder="Gist Description">
+                    </div>
+                    <div>
+                        <input type="text" id="gist-filename" class="form-control" placeholder="File Name">
+                    </div>
+                    <textarea name="" id="gist-text" rows="10" class="form-control" placeholder="Gist Text" ></textarea>
+                    <button class="btn btn-success" id="new-gist-btn">Create Gist!</button>
+                    <div id="gists-list"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
