@@ -78,7 +78,6 @@ class Request implements AjaxObj
         var timeout = setTimeout( function(){ self.abortRequest() }, 10000 );
         // var urlOptions = this.optionsToStringUrl( options );
         var urlOptions = JSON.stringify( options );
-        console.log( urlOptions );
         
         // open connection  
         this.xhttp.open('POST', reqUrl, true);
